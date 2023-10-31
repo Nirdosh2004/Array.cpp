@@ -1,0 +1,44 @@
+//swaping alternate elements in an array 
+
+#include<iostream>
+using namespace std;
+
+void printswap(int spiderman[] , int size){
+    for(int i=0;i<size;i++){
+        cout<<spiderman[i]<<"  ";
+    }
+}
+
+void swap(int spiderman[] , int size ){
+    for(int i=0;i<size;i+=2){
+        if(i+1<size){
+            swap(spiderman[i], spiderman[i+1]);
+        }
+    }
+}
+
+int main(){
+    
+    int size;
+    cout<<"Enter size of array : "<<endl;
+    cin>>size;
+    
+    int spiderman[size],i;
+    cout<<"Enter elements of array : "<<endl;
+    for(i=0;i<size;i++){
+        cin>>spiderman[i];
+    }
+    cout<<endl;
+     cout<<" Before Swapping : "<<endl;
+    for(i=0;i<size;i++){
+        cout<<spiderman[i]<<"  ";
+    }
+    cout<<endl;
+    cout<<endl;
+    cout<<" After Swapping alternate elements : "<<endl;
+  swap(spiderman,size);
+        printswap(spiderman,size);
+    
+    
+    return 0;
+}
