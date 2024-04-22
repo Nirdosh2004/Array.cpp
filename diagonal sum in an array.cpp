@@ -12,7 +12,7 @@ int main(){
         for(j=0;j<3;j++){
             cin>>matrix[i][j];
         }
-    }
+    }  
     cout<<endl;
      cout<<" elements of matrix in matrix format : "<<endl;
    
