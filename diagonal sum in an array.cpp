@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){    
     
     int matrix[3][3];
     cout<<"Enter elements of matrix : "<<endl;
