@@ -11,7 +11,7 @@ int search(int binary[] , int length , int key ){          //making fn for binar
     int start = 0;                                         //declaring initial index  of array as start
     int end = length - 1;                                  //declaring last index of array as end
     int mid = start + ( end - start )/2;                   //declaring middle index of array as mid
-    
+     
     while( start <= end ){                                //using loop
         if( binary[mid]== key){
             return mid;                                  
